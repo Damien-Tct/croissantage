@@ -8,4 +8,4 @@ Une appliquette simple sous docker permettant de croissanter des collègues de b
 
 # Lancement du docker : 
 
-``` sudo docker run --rm -p 8080:8080 -v $MON_REPO_CLONÉ/app:/app croissantage:local ```
+``` sudo docker run -d -p 8080:8080 -v $MON_REPO_CLONÉ/app:/app croissantage:local ```
