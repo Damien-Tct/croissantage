@@ -28,17 +28,13 @@ class CroissantForm(FlaskForm):
 def index():
     if request.method == "GET":
         form = CroissantForm()
-
-    # Génère une date aléatoire dans les 30 prochains jours
-        request_type = type(request)
-    
-        return render_template("index.html", request=request, form = form)
+        return render_template("index.html", form = form)
 
     if request.method == "POST":
         nom = request.form.get("nom")
         croissant = request.form.get("croissant")
 
-        return render_template("index.html", request=request, nom=nom, croissant=croissant)
+        return render_template("index.html", nom=nom, croissant=croissant)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
