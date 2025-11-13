@@ -21,7 +21,6 @@ class CroissantForm(FlaskForm):
 
 
 @app.route('/',methods=['GET', 'POST'])
-
 def index():
     if request.method == "GET":
         form = CroissantForm()
