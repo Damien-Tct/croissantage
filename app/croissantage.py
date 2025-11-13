@@ -1,9 +1,6 @@
 #! /usr/bin/env python3
 
 from flask import Flask, render_template, request
-from datetime import datetime, timedelta
-
-
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
